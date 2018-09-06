@@ -85,6 +85,12 @@ a {
   z-index: 100;
   top: 80px;
 }
+<<<<<<< HEAD
+=======
+header nav {
+  background-color: rgba(224, 224, 224);
+}
+>>>>>>> 9635d9cd2d4176a170e498d5b162b841175f08b7
 header li{
   padding: 20px 30px;
   border-bottom: 1px solid #F5F5F5;
