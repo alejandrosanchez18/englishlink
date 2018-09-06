@@ -1,0 +1,211 @@
+  * {
+    box-sizing: border-box;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+  }
+  a {
+    color:white;
+  }
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+}
+a {
+  text-decoration: none;
+}
+
+/* Header */
+.main-menu{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 300;
+  background-color: white;
+  width: 100%;
+
+}
+.logo {
+  margin: 10px;
+  width: 130px;
+}
+.logo img {
+  width: 100%;
+}
+.menu-desc {
+  color: #A5A5A5;
+}
+.menu-title {
+  margin-bottom: 0.2em;
+  font-size: 1.5em;
+}
+.burguer{
+  font-size: 3em;
+  color: #999999;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+.btn-alumnos {
+  display: flex;
+}
+.burguer-menu {
+  width: 90vw;
+  height: 100vh;
+  background-color: rgba(224, 224, 224);
+  position: fixed;
+  left: -100%;
+  z-index: 100;
+  top: 80px;
+}
+.nav-hidden {
+  height: 100vh;
+}
+header li{
+  padding: 20px 30px;
+  border-bottom: 1px solid #F5F5F5;
+  text-align: center;
+}
+header li:last-child{
+ border-bottom: 0;
+}
+header li:hover{
+  background-color: #F5F5F5;
+}
+header .bottom {
+  margin: 0 auto;
+  font-size: 1.2em;
+  color: white;
+  background-color: #FF0031;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  text-align: center;
+}
+header .bottom:hover {
+  background-color: #af0425;
+  text-decoration: none;
+}
+
+
+
+/* Slider Section */
+
+
+.slider {
+  width: 100%;
+}
+.slider img {
+  width: 100%;
+}
+
+
+/* Cards section  */
+
+.card {
+  background-color: #002959;
+  color: white;
+  width: 100%;
+  padding: 50px 30px;
+  margin-top: 5px;
+  text-align: center;
+  border-radius: 0;
+}
+.card img{
+  width: 70px;
+  margin: 0 auto;
+}
+.card-title{
+  font-size: 3em;
+  font-weight: 1000;
+  margin: 10px 0;
+}
+.card-description{
+font-weight: 200;
+ font-size: 1.5em;
+}
+
+
+/* About section */
+.about {
+  text-align: center;
+  margin: 3em auto;
+}
+.about h2{
+  text-transform: uppercase;
+  margin: 0.5em 0;
+  font-size: 3em;
+  color: #FB0000;
+  font-weight: bold;
+}
+.about h4 {
+  margin: 0.5em 0;
+  font-size: 2em;
+}
+.about p{
+  font-size: 1.5em;
+  color: #999999;
+}
+
+
+
+/* Contecto */
+.contacto {
+  padding: 1em;
+  color: white;
+  text-align: center;
+  background-color: #002959;
+  padding-bottom: 4em;
+}
+.contacto h3{
+  font-size: 3em;
+  margin: 1em;
+}
+.contacto p{
+  font-size: 1.5em;
+  padding: 0.5em;
+}
+
+/* footer */
+footer {
+  padding-top: 1em;
+  text-align: center;
+  color: #999999;
+  background-color: #0A0A0A;
+  padding-bottom: 2em;
+}
+footer h2{
+  font-size: 2.5em;
+  margin-top: 1em;
+}
+footer h4 {
+  margin-top: 1em;
+  font-size: 1.2em;
+}
