@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,800" rel="stylesheet">
+    <style media="screen">
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+  .carousel-item {
+    /* position: relative !important; */
+  }
+  .carousel-background {
+    position: relative;
+
+  }
+  .text-slider {
+    left: 2vw;
+    bottom: 1.5vw;
+    text-align: left;
+    width: 23vw;
+  }
+  .text-slider h3 {
+    font-weight: 600;
+    font-size: 3.4vw;
+    margin-bottom: 1vw;
+  }
+  .slider-button {
+    background-color: #FB0000;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 30px;
+    color: white;
+  }
+  .slider-button:hover {
+    background-color: white;
+    color: black;
+  }
+  .slider-button i {
+    padding-left: 10px;
+  }
+  .carousel-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+    </style>
+
+
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+
+
+
+<div class="fluid-container carousel-container">
+  <!-- <div class="carousel-background d-none d-md-block">
+    <img src="./img/banner/sliderlateral.png" alt="">
+  </div> -->
+  <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="20000">
+  <ol class="carousel-indicators">
+    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel" data-slide-to="1"></li>
+    <li data-target="#carousel" data-slide-to="2"></li>
+    <li data-target="#carousel" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="carousel-background d-none d-md-block">
+        <img src="./img/banner/sliderlateral.png" alt="">
+      </div>
+      <img class="d-none d-md-block w-100" src="./img/banner/slider1.jpg" alt="First slide">
+      <img class="w-100 d-block d-md-none"src="./img/banner/mobile/slider1.jpg" alt="">
+      <div class="carousel-caption text-slider d-none d-md-block">
+        <h3>CAPACITA<br> A TU STAFF DE LA MEJOR MANERA</h3>
+        <p class="slider-button">Contáctanos<i class="fas fa-angle-right"></i></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="carousel-background d-none d-md-block">
+        <img src="./img/banner/sliderlateral.png" alt="">
+      </div>
+      <img class="d-none d-md-block w-100" src="./img/banner/slider2.jpg" alt="First slide">
+      <img class="w-100 d-block d-md-none"src="./img/banner/mobile/slider1.jpg" alt="">
+      <div class="carousel-caption text-slider d-none d-md-block">
+        <h3>OBTENÉ TU CERTIFICAÓN INTERNACIONAL</h3>
+        <p class="slider-button">Contáctanos<i class="fas fa-angle-right"></i></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="carousel-background d-none d-md-block">
+        <img src="./img/banner/sliderlateral.png" alt="">
+      </div>
+      <img class="d-none d-md-block w-100" src="./img/banner/slider3.jpg" alt="First slide">
+      <img class="w-100 d-block d-md-none"src="./img/banner/mobile/slider1.jpg" alt="">
+      <div class="carousel-caption text-slider d-none d-md-block">
+        <h3>ABRE TU CAMINO A NUEVAS EXPERIENCAS</h3>
+        <p class="slider-button">Contáctanos<i class="fas fa-angle-right"></i></p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="carousel-background d-none d-md-block">
+        <img src="./img/banner/sliderlateral.png" alt="">
+      </div>
+      <img class="d-none d-md-block w-100" src="./img/banner/slider4.jpg" alt="First slide">
+      <img class="w-100 d-block d-md-none"src="./img/banner/mobile/slider1.jpg" alt="">
+      <div class="carousel-caption text-slider d-none d-md-block">
+        <h3>LA MEJOR EXPERIENCIA PARA NIÑOS</h3>
+        <p class="slider-button">Contáctanos<i class="fas fa-angle-right"></i></p>
+      </div>
+    </div>
+</div>
+</div>
+</div>
+
+
+  <div class="bloque"><p>esto es un texto</p></div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

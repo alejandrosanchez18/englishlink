@@ -22,6 +22,9 @@ a {
 }
 
 /* Header */
+header {
+  height: 75px;
+}
 .main-menu{
   position: fixed;
   display: flex;
@@ -31,6 +34,7 @@ a {
   background-color: white;
   width: 100%;
   height: 75px;
+  left: 0;
 
 }
 .logo {
@@ -45,37 +49,42 @@ a {
   color: #A5A5A5;
 }
 .menu-title {
+  color: #333333;
+  font-weight: 500;
   margin-bottom: 0.2em;
   font-size: 1.5em;
 }
 .burguer{
   font-size: 3em;
   color: #999999;
-  padding: 0.5em;
+  padding: 0.2em;
   cursor: pointer;
+  border: 1px solid rgba(69, 69, 69, 0.5);
+  margin-right: .3em;
 }
 
 .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
+    width: 30px;
+    height: 2px;
+    background-color: rgba(51, 51, 51, 0.5);
     margin: 6px 0;
     transition: 0.4s;
 }
 
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+    -webkit-transform: rotate(-45deg) translate(-4px, 5px);
+    transform: rotate(-45deg) translate(-4px, 5px);
 }
 
 .change .bar2 {opacity: 0;}
 
 .change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+    -webkit-transform: rotate(45deg) translate(-7px, -7px);
+    transform: rotate(45deg) translate(-7px, -7px);
 }
 .btn-alumnos {
   display: flex;
+  justify-content: center;
 }
 .list-menu {
   width: 90vw;
@@ -100,74 +109,90 @@ header li:last-child{
 header li:hover{
   background-color: #F5F5F5;
 }
-header .bottom {
-  margin: 5px auto;
+header .btn-sesion {
   font-size: 1.2em;
   color: white;
   background-color: #FF0031;
-  display: inline-block;
-  padding: 10px;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  padding: 10px 15px;
+  border-radius: 3px;
+  margin-top: 1.8em;
+  margin-bottom: 1.8em;
   text-align: center;
   width: 160px;
 }
-header .bottom:hover {
+header .btn-sesion:hover {
   background-color: #af0425;
   text-decoration: none;
 }
 
+/* Slider */
 
-
-/* Slider Section */
-
-.carousel-inner {
-width: 100%;
-}
-#carousel {
+.carousel-background {
   position: relative;
-  margin-bottom: 80px;
-}
-.background-slider{
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 10;
-}
-.text-slider h3 {
-  font-size: 1.2em;
-}
-.text-slider p {
-  font-size: 1em;
+
 }
 .text-slider {
-
- z-index: 20;
- width: 25%;
- bottom: 5%;
- left: 15%;
- text-align: left;
+  left: 3vw;
+  bottom: 4vw;
+  text-align: left;
+  width: 23vw;
+}
+.text-slider h3 {
+  font-weight: 600;
+  font-size: 3.4vw;
+  margin-bottom: 3vw;
+}
+.slider-button {
+  background-color: #FB0000;
+  display: inline-block;
+  padding: .7vw 2vw;
+  border-radius: 30px;
+  color: white;
+}
+.slider-button:hover {
+  background-color: white;
+  color: black;
+}
+.slider-button i {
+  padding-left: 10px;
+}
+.carousel-background img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.text-slider p {
+  font-size: 1.4vw;
+}
+.carousel-container {
+  margin-bottom: 40px;
 }
 
-/* Cards section  */
 
+
+
+/* Cards section  */
 .card {
   background-color: #002959;
   color: white;
-  padding: 50px 30px;
+  padding: 20px 10px;
   margin-top: 5px;
   text-align: center;
   border-radius: 0;
+  width: 100%;
+  height: 180px;
 }
 .card img{
   width: 70px;
   margin: 0 auto;
 }
 .card-title{
-  font-size: 3em;
-  font-weight: 1000;
-  margin: 10px 0;
+  margin-top: 10px;
+  font-size: 2.5em;
+  font-weight: 600;
+  /* margin: 10px 0; */
 }
 .card-description{
 font-weight: 200;
@@ -235,13 +260,24 @@ footer h4 {
 }
 
 @media screen and (min-width: 960px) {
+  .menu-container{
+    max-width: 1200px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
   .burguer {
     display: none;
   }
   .list-menu {
+    display: flex;
+    justify-content: space-between;
     position: static;
-    width: auto;
+    width: 80%;
     height: auto;
+    overflow: hidden;
   }
   .list-menu ul {
     display: flex;
@@ -257,8 +293,9 @@ footer h4 {
     justify-content: space-between;
   }
   header li {
-    width: 190px;
-    padding-right: 40px;
+    width: 25%;
+    max-width: 180px;
+    padding-right: 2vw;
     text-align: left;
     border-bottom: 0;
     border-right: 1px solid #F5F5F5;
@@ -272,29 +309,8 @@ footer h4 {
     height: auto;
   }
   .btn-alumnos {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    margin: 0 20px;
-  }
-  .container {
-    width: 1170px;
-    margin: 0 auto;
   }
   .logo {
     width: 160px;
-    margin: 0 60px 0 0;
+    margin: 0 2vw 0 0;
   }
-
-
-
-
-  /* Cards Section */
-  .cards {
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .card {
-    width: 23%;
-  }
-}
