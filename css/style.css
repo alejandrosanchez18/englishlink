@@ -183,6 +183,11 @@ header .btn-sesion:hover {
   border-radius: 0;
   width: 100%;
   height: 180px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  background-color: #02234b;
 }
 .card img{
   width: 70px;
@@ -202,22 +207,30 @@ font-weight: 200;
 /* About section */
 .about {
   text-align: center;
-  margin: 3em auto;
+  margin: 5em auto;
 }
 .about h2{
   text-transform: uppercase;
-  margin: 0.5em 0;
-  font-size: 3em;
+  margin: 1em 0;
+  font-size: 3.5em;
+  font-weight: 600;
   color: #FB0000;
   font-weight: bold;
 }
 .about h4 {
-  margin: 0.5em 0;
-  font-size: 2em;
+  margin: 1em 0;
+  font-size: 2.5em;
+  font-style: italic;
+  font-weight: 300;
 }
 .about p{
   font-size: 1.5em;
   color: #999999;
+  line-height: 1.2em;
+}
+.who , .do {
+  border-right: 1px solid rgba(0, 0, 0, .3);
+  padding-right: 10px;
 }
 
 /* Contecto */
@@ -268,6 +281,7 @@ footer h4 {
   left: 0;
   right: 0;
   z-index: 200;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.10), 0 1px 2px rgba(0,0,0,0.20);
 }
   .menu-container{
     max-width: 1200px;
