@@ -167,7 +167,7 @@ header .btn-sesion:hover {
   font-size: 1.4vw;
 }
 .carousel-container {
-  margin-bottom: 40px;
+  margin-bottom: 3vw;
 }
 
 
@@ -260,11 +260,19 @@ footer h4 {
 }
 
 @media screen and (min-width: 960px) {
+.background-menu{
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+}
   .menu-container{
     max-width: 1200px;
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding: 5px 15px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -314,3 +322,9 @@ footer h4 {
     width: 160px;
     margin: 0 2vw 0 0;
   }
+
+  /* carousel */
+  .carousel-container {
+    margin-top: 85px;
+  }
+}
