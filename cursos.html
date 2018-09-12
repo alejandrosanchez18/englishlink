@@ -2,59 +2,166 @@
 <html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
-  <style media="screen">
-  #img-contenedor img {
--webkit-transition:all .9s ease; /* Safari y Chrome */
--moz-transition:all .9s ease; /* Firefox */
--o-transition:all .9s ease; /* IE 9 */
--ms-transition:all .9s ease; /* Opera */
-width:100%;
-}
-#img-contenedor:hover img {
--webkit-transform:scale(1.25);
--moz-transform:scale(1.25);
--ms-transform:scale(1.25);
--o-transform:scale(1.25);
-transform:scale(1.25);
-}
-#img-contenedor {/*Ancho y altura son modificables al requerimiento de cada uno*/
-width:400px;
-height:200px;
-overflow:hidden;
-}
-  </style>
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sh a384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300i,400,500,700" rel="stylesheet">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      <!-- Reset y Style-->
+      <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .back-courses-pg {
+          margin-top:85px;
+          background-color:#002D58;
+        }
+        .back-courses-pg h3{
+          color: white;
+          padding: 25px;
+          font-size: 2.5em;
+          font-weight: 600;
+        }
+        .back-courses-pg i {
+          padding-right: 30px;
+        }
+       .subtitle {
+         padding: 20px 0;
+         border-bottom: 1px solid rgba(118, 118, 122, 0.6);
+         color: #77777B;
+         font-size: 1.2em;
+       }
+  h4{
+    font-size: 2em;
+    padding: 10px 0;
+  }
+
+
+    </style>
   </head>
   <body>
+      <div class="background-menu">
+        <div class="menu-container">
+          <header>
+         <div class="main-menu">
+           <div class="logo"><img src="img/logot.png" alt=""></div>
+           <div class="burguer" onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+         </div>
+
+          <nav class="list-menu">
+            <ul>
+              <li><h3 class="menu-title">Sobre Nosotros</h3><p class="menu-desc">Descrubre quienes somos y que hacemos</p></li>
+              <li><h3 class="menu-title">Cursos</h3><p class="menu-desc">Información sobre todos los cursos disponibles</p></li>
+              <li><h3 class="menu-title">Inscripción</h3><p class="menu-desc">Completa el formulario para inscribirte</p></li>
+              <li><h3 class="menu-title">Work with as</h3><p class="menu-desc">Unete a nuestro equipo de trabajo</p></li>
+            </ul>
+            <div class="btn-alumnos"><a class="btn-sesion" href="/iniciar-sesion"><i class="fas fa-graduation-cap"></i> ACCESO ALUMNOS</a></div>
+          </nav>
+
+        </header>
+      </div>
+      </div>
+
+      <div class="fluid-container back-courses-pg">
+       <div class="container">
+         <h3><i class="fas fa-graduation-cap"></i>Curso de Ingles General</h3>
+       </div>
 
 
 
 
-  <div id="img-contenedor">
-<img src="./img/courses/viajero.jpeg" alt="" />
+      </div>
+      <div class="container">
+      <section class="subtitle">
+
+          <p>Cursos > Ingles General</p>
+
+
+      </section>
+      </div>
+
+
+<div class="container">
+<div class="row">
+<div class="col-12"><h4> General English ( Teens – Young adults – Adults) </h4></div>
+<div class="col-4">
+
+  <ul class="list-group list-group-flush">
+  <li class="list-group-item">Elementary (A1)</li>
+  <li class="list-group-item">Pre intermediate (A2)</li>
+  <li class="list-group-item">Intermediate (B1)</li>
+  <li class="list-group-item">Upper intermediate (B2)</li>
+  <li class="list-group-item">Advanced (C1)</li>
+  <li class="list-group-item">Proficiency(C2)</li>
+</ul>
+</div>
+
+</div>
+
+
+
+</div>
+
+
+<div class="container">
+<div class="row">
+<div class="col-4">
+
+</div>
+
+<div class="col">
+
+
+  </div>
+  <form>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Email address</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Example select</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect2">Example multiple select</label>
+      <select multiple class="form-control" id="exampleFormControlSelect2">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Example textarea</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+  </form>
+
+
+</div>
+
+
+
 </div>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div>
 
 
   </body>

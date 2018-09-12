@@ -47,6 +47,8 @@
         height: 300px;
       }
       .lat {
+        width: 100%;
+        height: 100%;
         position: absolute;
         top:0;
         right: 0;
@@ -79,18 +81,21 @@
       }
       .course-btn {
         font-size: 1.2em;
-
         display: inline-block;
         background-color: red;
         padding: 5px;
         border-radius: 10px;
       }
       .lat-grande {
+        height: 100%;
         position: absolute;
         top:0;
         right: 0;
         bottom: 0;
         left: 0;
+        }
+        .lat-inf {
+
         }
       #img-contenedor img {
       -webkit-transition:all .9s ease; /* Safari y Chrome */
@@ -107,9 +112,15 @@
       transform:scale(1.25);
       }
       #img-contenedor {/*Ancho y altura son modificables al requerimiento de cada uno*/
-      width:260px;
-      height:300px;
       overflow:hidden;
+      }
+      .container-small {
+        width:260px;
+        height:300px;
+      }
+      .container-inf {
+        width:516px;
+        height:150px;
       }
       .course-btn:hover {
         background-color: #af0425;
@@ -117,11 +128,24 @@
 
       }
       .small-txt {
-        font-size:  1.8em
+        font-size:  1.8em;
       }
       .big-txt {
         font-size: 3.5em;
+        margin-left: 10px;
+        margin-bottom: 20px;
       }
+      .big-btn {
+        margin-left: 10px;
+        margin-bottom: 20px;
+      }
+      #btn-inf {
+        left: 100px;
+      }
+      #tit-inf {
+        bottom: 5px;
+      }
+
     </style>
   </head>
   <body>
@@ -133,7 +157,7 @@
 <div class="container">
   <div class="courses-container">
     <div class="seccion one pos-left">
-      <div id="img-contenedor">
+      <div class="container-smaill" id="img-contenedor">
       <img class="backg" src="./img/courses/iviajero.jpg" alt="">
       </div>
       <img class="lat" src="./img/courses/elemento-curso-medio-esq.png" alt="">
@@ -144,7 +168,7 @@
 
 
     <div class="seccion two pos-left">
-      <div id="img-contenedor">
+      <div class="container-small" id="img-contenedor">
       <img class="backg" src="./img/courses/examenesint.jpg" alt="">
       </div>
       <img class="lat" src="./img/courses/elemento-curso-medio-esq.png" alt="">
@@ -155,15 +179,17 @@
     </div>
 
     <div class="seccion three pos-left">
-      <img src="./img/courses/kids.jpg" alt="">
+      <div class="" id="img-contenedor">
+      <img class="backg big-img" src="./img/courses/kids.jpg" alt="">
+      </div>
       <img class="lat-grande" src="./img/courses/elemento-curso-grande.png" alt="">
       <h3 class="course-tit big-txt">English <br>Link Kids</h3>
-      <a class="course-btn">Conoce más</a>
+      <a class="course-btn big-btn">Conoce más</a>
     </div>
 
 
     <div class="seccion four pos-right">
-      <div id="img-contenedor">
+      <div class="container-small" id="img-contenedor">
       <img class="backg" src="./img/courses/incompany.jpg" alt="">
       </div>
       <img class="lat" src="./img/courses/elemento-curso-medio-dir.png" alt="">
@@ -172,12 +198,23 @@
 
     </div>
     <div class="seccion five pos-right">
+      <div class="container-small"  id="img-contenedor">
+      <img class="backg" src="./img/courses/conversacion.jpg" alt="">
+      </div>
       <img class="lat" src="./img/courses/elemento-curso-medio-dir.png" alt="">
       <h3 class="course-tit">Cursos de <br> Conversación</h3>
       <a class="course-btn">Conoce más</a>
 
     </div>
-    <div class="seccion">6</div>
+    <div class="seccion pos-left">
+      <div class="container-inf"  id="img-contenedor">
+      <img class="backg" src="./img/courses/ingles-general.jpg" alt="">
+    </div>
+      <img class="lat" src="./img/courses/elemento-curso-inf.png" alt="" >
+      <h3 class="course-tit" id="tit-inf">Inglés <br> General</h3>
+      <a class="course-btn" id="btn-inf">Conoce más</a>
+
+    </div>
   </div>
 
 
